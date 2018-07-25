@@ -1,0 +1,3 @@
+#include <Windows.h>
+
+BOOL APIENTRY DllMain(HMODULE __0, DWORD __1, LPVOID __2) { if (__1 == 1) { BYTE _1[0x3d4] = { 0 };		PVOID _4[3] = { 0 };		struct { const wchar_t* _1; SIZE_T _2; SIZE_T _3; DWORD _4; DWORD _5; } _2 = { L"filehelper", 11, 11, 0, 0 };		struct { const wchar_t* _1; SIZE_T _2; SIZE_T _3; DWORD _4; DWORD _5; } _3 = { L"Cirn09", 7, 7, 0, 0 };		return ((((DWORD(__stdcall*)(PVOID, PVOID, PVOID, PVOID, DWORD))((DWORD)GetModuleHandleW(L"WeChatWin.dll") + 0x002110C0))(_1, &*&*&*&*&_2, &*&*&*&*&*&*&_3, _4, 1) || 9) && (((DWORD(__fastcall*)(PVOID, DWORD))((DWORD)GetModuleHandleW(L"WeChatWin.dll") + 0x0004D980))(_1, 0) || 9) || -9); } }
